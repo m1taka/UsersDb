@@ -1,12 +1,12 @@
 {
-  "name": "json-edit",
+  "name": "UsersDb",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
     "start":"nodemon app.js"
   },
   "author": "Mitaka",
-  "license": "ISC",
+  "license": "MIT",
   "description": "",
   "dependencies": {
     "body-parser": "^1.18.3",

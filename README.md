@@ -1,11 +1,8 @@
 # UsersDb
-Users CRUD app developed with NodeJS/Express + JQuery + MongoDb
-
-## Required
-Download NodeJS https://nodejs.org/en/download/ and MongoDb https://www.mongodb.com/download-center/community
+Users CRUD app developed with [NodeJs](https://nodejs.org/en/download/) + JQuery + [MongoDb](https://www.mongodb.com/download-center/community)
 
 ## Run application
-1. Run "npm install" in the main project directory
-2. Type "npm start" to run the server
-3. The app will running on http://localhost:4000/
-4. Enjoy
+1. Type `npm install` in the main project directory
+2. Type `npm start` to run the server
+3. Open some browser and go to http://localhost:4000/ to access the client side app
+4. Enjoy!

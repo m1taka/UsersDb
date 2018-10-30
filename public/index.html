@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+		<title>UsersDB</title>		
+
+	</head>
+	<body>
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="#">UsersDB</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="http://localhost:4000">Home <span class="sr-only">(current)</span></a>
+						</li>
+				</div>
+			</nav>
+			<br/>
+			<header class="jumbotron">
+				<h1>Users</h1>
+			</header>
+			<form id="inputForm">
+				<input id="name" name="name" placeholder="Name"/>	
+
+				<input id="age" name="age" placeholder="Age"/>
+				
+				<input id="job" name="job" placeholder="Job"/>
+				
+				<button class="btn btn-primary" id="btnAdd">Add</button>
+			</form>
+
+			<table class="table table-hover table-dark" id="table1">
+				<thead >
+					<tr>
+						<th>
+							Name
+						</th>
+						
+						<th>
+							Age
+						</th>
+						<th>
+							Proffesion
+						</th>
+						<tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+
+					<br/>
+					<br/>
+					<footer class="footer">
+						<div>
+							&copy;	<a id="year"></a> - Dimitar Lukarski 
+						</div>
+					</footer>
+		</div>	
+
+		<div id="modalId" class="modal">
+			<form class="modal-content">
+				<h4>Update</h4>	
+
+				<input class="modal-id" name="id" placeholder="Id" style="display:none"/>
+
+				<input class="modal-element" id="name" name="name" placeholder="Name"/>	
+
+				<input class="modal-element" id="age" name="age" placeholder="Age"/>
+				
+				<input class="modal-element" id="job" name="job" placeholder="Job"/>
+				
+				<button class="btn btn-success" id="btnSubmit">Submit</button>
+			</form>
+		</div>
+	
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.js"></script>
+		<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<script src="js/script.js" type=""></script>
+	</body>
+</html>

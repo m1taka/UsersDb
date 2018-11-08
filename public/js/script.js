@@ -57,7 +57,7 @@ app = () => {
 					required: "Please enter a name",
 				},
 				age: {
-					required: "Please enter an age",
+					required: "Please enter a valid age",
 				},
 				job: {
 					required: "Please enter a job",
@@ -75,7 +75,7 @@ app = () => {
 					type: "POST",
 					data: { name: name, age: age, job: job },
 					success: (data) => {
-						console.log('Added: ' + JSON.stringify(data));
+						// console.log('Added: ' + JSON.stringify(data));
 						getData();
 					},
 					error: (jqXHR, status) => {
@@ -141,7 +141,7 @@ app = () => {
 					required: "Please enter a name",
 				},
 				age: {
-					required: "Please enter an age",
+					required: "Please enter a valid age",
 				},
 				job: {
 					required: "Please enter a job",
@@ -162,7 +162,7 @@ app = () => {
 					contentType: "application/json",
 					data: JSON.stringify({ name: newName, age: newAge, job: newJob }),
 					success: (data) => {
-						console.log("Data updated:" + JSON.stringify(data));
+						// console.log("Data updated:" + JSON.stringify(data));
 						$('#modalId').hide();
 						getData();
 					},
@@ -187,7 +187,7 @@ app = () => {
 				url: URL + "/" + id,
 				type: "DELETE",
 				success: function (data) {
-					console.log(JSON.stringify(data));
+					// console.log(JSON.stringify(data));
 					getData();
 				},
 				error: (jqXHR, status) => {

@@ -7,17 +7,17 @@ const PersonSchema = new Schema({
 
     name:{
         type: String,
-        require: 'Enter your name, please'
+        required: true
     },
 
     age:{
         type: Number,
-        require: 'Enter your age, please'
+        required: true
     },
 
     job:{
         type: String,
-        require: 'Enter your job, please'
+        required: true
     }
 });
 

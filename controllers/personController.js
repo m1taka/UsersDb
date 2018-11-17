@@ -4,22 +4,34 @@ var mongoose = require('mongoose'),
     ObjectId = require('mongodb').ObjectID,
     Person = mongoose.model('Persons');
 
-exports.find_all = (req, res) => {
-    Person.find({}, (err, person) => {
-        if (err) {
-            res.send(err);
-        } else {
-            res.json(person);
+// exports.find_all = (req, res) => {
+//     Person.find({}, (err, person) => {
+//         if (err) {
+//             res.send(err);
+//         } else {
+//             res.json(person);
+//         }
+//     });
+// };
+
+exports.find_all = (req,res)=>{
+    Person.find({reference: req.params.id}).exec(
+        (err, person) => {
+            if (err) {
+                res.status(400).send(err);
+            } else {
+                res.json(person);
+            }
         }
-    });
-};
+    );
+}
 
 exports.add_person = (req, res) => {
     let new_person = new Person(req.body);
 
     new_person.save((err, person) => {
         if (err) {
-            res.send(err);
+            res.status(400).json(err);
         } else {
             res.json(person);
             console.log("New person is successfully added: " + person);
